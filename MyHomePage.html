@@ -3,53 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Page Title</title>
-    <!-- Add your CSS file here -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Photography Prints by Michael Osswald</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Website</h1>
-        <!-- Add your navigation menu here -->
+        <div class="container">
+            <h1>Mike Osswald Photography</h1>
+        </div>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="MyHomePage.html">Home</a></li>
+                    <li><a href="shop.html">Store</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                </ul>
+            </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section.</p>
+        <section id="preview_gallery">
+            <div class="container">
+                <div class="photo-gallery">
+                    <!-- Placeholder for your photography images -->
+                    <div class="photo">
+                        <img src="Photos/Background1.png" alt="Photo 1">
+                        <p>Birds eye view of glacier cravasses</p>
+                    </div>
+                    <div class="photo">
+                        <img src="Photos/Background2.png" alt="Photo 1">
+                        <p>Laguna Three-Arches at early morning</p>
+                    </div>
+                    <div class="photo">
+                        <img src="Photos/Background3.png" alt="Photo 1">
+                        <p>Malibu Sunset Hitting Tree</p>
+                    </div>
+                    <div class="photo">
+                        <img src="Photos/Background4.png" alt="Photo 1">
+                        <p>Redwoods emerging from morning fog</p>
+                    </div>
+                    <div class="photo">
+                        <img src="Photos/Background5.png" alt="Photo 1">
+                        <p>Waves Cresting on foggy day</p>
+                    </div>
+                    <div class="photo">
+                        <img src="Photos/Background6.png" alt="Photo 1">
+                        <p>Rocky beach leading to light blue ocean</p>
+                    </div>
+                    <div class="view-more">
+                        <a href="gallery.html" class="view-more-button">View More</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="about">
-            <h2>About</h2>
-            <p>This is the about section.</p>
-        </section>
-
-        <section id="services">
-            <h2>Services</h2>
-            <p>This is the services section.</p>
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="Photos/IMG_0464.JPG" alt="Michael Osswald">
+                    <p>Hello! I'm Mike, a passionate photographer specializing in Lanscapes. I love capturing moments and scenes that inspire and evoke emotion. Explore my collection of photography prints and feel free to contact me for inquiries or collaborations.</p>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <p>This is the contact section.</p>
+            <div class="container">
+                <h2>Contact</h2>
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-        <!-- Add social media links or other footer content here -->
+        <div class="container">
+            <p>&copy; 2024 Photography by Mike Osswald - Photography Prints</p>
+        </div>
     </footer>
 
-    <!-- Add your JavaScript file here -->
     <script src="script.js"></script>
 </body>
 </html>
