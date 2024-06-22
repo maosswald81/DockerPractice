@@ -58,13 +58,6 @@ main {
     padding: 2rem 0;
 }
 
-/* Gallery section styling */
-#preview_gallery {
-    background-color: #fff; /* White background for gallery */
-    padding: 2rem 0;
-    position: relative; /* Ensure relative positioning for overlay */
-}
-
 #preview_gallery::after {
     content: ''; /* Create a pseudo-element */
     position: absolute;
@@ -74,6 +67,19 @@ main {
     height: 100px; /* Adjust height as needed */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff); /* Gradient to transparent */
     pointer-events: none; /* Ensure clicks pass through to elements behind */
+}
+
+/* Gallery section styling */
+#preview_gallery {
+    background-color: #fff; /* White background for gallery */
+    padding: 2rem 0;
+    position: relative; /* Ensure relative positioning for overlay */
+}
+
+#full_gallery {
+    background-color: #fff; /* White background for gallery */
+    padding: 2rem 0;
+    position: relative; /* Ensure relative positioning for overlay */
 }
 
 .photo-gallery {
